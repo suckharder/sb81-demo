@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="dark" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>Live Demo - Starbase 81</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="logo.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#2C2C2E">
+	<link rel="stylesheet" href="./css/main.static.css" />
+</head>
+
+<body>
+	<div id="root">
+		<div class="min-h-screen">
+			<div class="min-h-screen flex flex-col max-w-screen-2xl mx-auto xl:flex-row">
+				<div
+					class="p-4 w-full xl:w-auto xl:max-w-xs xl:min-h-screen border-0 border-solid border-gray-300 dark:border-gray-700 border-b xl:border-r xl:border-b-0">
+					<div class="p-2 xl:p-4 flex flex-wrap justify-center items-center gap-2 xl:flex-wrap"><img
+							src="logo.png" alt="The Abyss" class="inline-block w-16 h-16">
+						<h1>Dashboard</h1>
+						<div id="auth-widget"
+							class="mx-auto mt-2 basis-full max-w-[80vw] flex max-w-sm items-center gap-x-4 rounded-xl bg-slate-800 p-6 outline dark:bg-slate-800 shadow-none -outline-offset-1 outline-white/10">
+							<img id="lImg" src="default_avatar.jpg"
+								alt="Avatar" class="w-8 h-8 rounded-full">
+							<p id="lText" class="text-slate-100 dark:text-slate-100 font-medium">
+								Logged in as: <strong>John Doe</strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="p-4 flex-grow min-h-screen">
+					<ul>
+						<li class="mt-12 first:mt-0 xl:first:mt-6">
+							<h2 class="text-2xl text-slate-200 dark:text-slate-200 font-light py-2 px-4">Services</h2>
+							<ul
+								class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 lg:gap-2 lg:gap-y-4">
+								<li class="p-4"><a href="https://github.com/nextcloud" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl border border-black/5 shadow-sm"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/nextcloud.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Nextcloud</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Self-hosted cloud</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/jellyfin" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/jellyfin.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Jellyfin</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Self-hosted media server
+											</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/navidrome" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/navidrome.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Navidrome</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Self-hosted music server</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/alam00000/bentopdf" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/bentopdf.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">BentoPDF</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Self-hosted PDF tools
+											</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/blinkospace" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/blinko.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Blinko</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Self-hosted notes</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://docs.linuxserver.io/images/docker-qbittorrent/" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/qbittorrent.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Qbittorrent</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Torrent WebUI in Docker</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/excalidraw" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/excalidraw.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Excalidraw</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Self-hosted whiteboard</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/open-webui" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/open-webui.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Open WebUI</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Self-hosted AI chat</p>
+										</div>
+									</a></li>
+							</ul>
+						</li>
+						<li class="mt-12 first:mt-0 xl:first:mt-6">
+							<h2 class="text-2xl text-slate-200 dark:text-slate-200 font-light py-2 px-4">Administration
+							</h2>
+							<ul
+								class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 lg:gap-2 lg:gap-y-4">
+								<li class="p-4"><a href="https://www.proxmox.com" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/proxmox.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Proxmox</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Free hypervisor</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/getarcaneapp" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/arcane.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Arcane</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">FOSS Docker
+												Manager</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/NginxProxyManager" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/nginx-proxy-manager.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">NPM</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Reverse proxy with a GUI</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/goauthentik" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/authentik.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Authentik</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Free auth solution</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/pi-hole" title=""
+										class="flex gap-4"><span class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/pi-hole.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">PiHole</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Self-hosted DNS
+												Sinkhole</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/wazuh" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl border border-black/5 shadow-sm bg-stone-200"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/wazuh.png" alt=""
+													class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Wazuh</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Open source security</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/docmost" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl border border-black/5 shadow-sm"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/docmost.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Docmost</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">
+												Self-hosted docs</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/LizardByte/Sunshine" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/sunshine.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Sunshine</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">Self-hosted game streaming</p>
+										</div>
+									</a></li>
+							</ul>
+						</li>
+						<li class="mt-12 first:mt-0 xl:first:mt-6">
+							<h2 class="text-2xl text-slate-200 dark:text-slate-200 font-light py-2 px-4">Other</h2>
+							<ul
+								class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 lg:gap-2 lg:gap-y-4">
+								<li class="p-4"><a href="https://github.com/suckharder/starbase-81" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl border border-black/5 shadow-sm bg-zinc-600"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/github.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Source code</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">This project's source code</p>
+										</div>
+									</a></li>
+								<li class="p-4"><a href="https://github.com/notclickable-jordan/starbase-80" title="" class="flex gap-4"><span
+											class="flex-shrink-0 flex"><span
+												class="flex items-center justify-center overflow-hidden bg-contain w-16 h-16 rounded-2xl border border-black/5 shadow-sm"
+												style=""><img
+													src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/starbase-80.png"
+													alt="" class="w-16 h-16 object-contain"></span></span>
+										<div>
+											<h3 class="text-lg mt-1 font-semibold line-clamp-1">Original project</h3>
+											<p class="text-sm text-white/50 dark:text-white/50 line-clamp-1">By Jordan Roher</p>
+										</div>
+									</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('/service-worker.js').then(reg => console.log('Service Worker registered', reg)).catch(err => console.error('Service Worker registration failed', err)); }); }</script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+    "name": "Dashboard",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#2C2C2E",
+    "icons": [
+        {
+            "src": "logo.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ]
+}
