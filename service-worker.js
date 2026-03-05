@@ -5,12 +5,12 @@ const CACHE = "PWA_Cache";
 
 // Select files for caching.
 let urlsToCache = [
-    "/sb-81/",
-    "/sb-81/index.html",
-    "/sb-81/favicon.ico", 
-    "/sb-81/logo.png",
-    "/sb-81/background.jpg",
-    "/sb-81/css/main.static.css"
+    "/sb81-demo/",
+    "/sb81-demo/index.html",
+    "/sb81-demo/favicon.ico", 
+    "/sb81-demo/logo.png",
+    "/sb81-demo/background.jpg",
+    "/sb81-demo/css/main.static.css"
 ];
 
 // Cache all the selected items once application is installed.

@@ -1,6 +1,6 @@
 {
     "name": "Dashboard",
-    "start_url": "/sb-81/",
+    "start_url": "/sb81-demo/",
     "display": "standalone",
     "theme_color": "#2C2C2E",
     "icons": [
